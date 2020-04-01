@@ -29,4 +29,8 @@ public abstract class IntegrationTest {
                     .extract().path("access_token");
         return token;
     }
+
+    public String getUriAuth(){
+        return uriAuth;
+    }
 }

@@ -2,6 +2,12 @@ plugins {
 	id 'org.springframework.boot' version '2.1.13.RELEASE'
 	id 'io.spring.dependency-management' version '1.0.9.RELEASE'
 	id 'java'
+	id 'application'
+	id "io.franzbecker.gradle-lombok" version "3.3.0"
+}
+
+application{
+	mainClassName = 'com.desafio.api.demoteste.DemoTesteApplication'
 }
 
 group = 'com.desafio.api'
@@ -20,8 +26,8 @@ repositories {
 
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
-	compileOnly 'org.projectlombok:lombok'
-	annotationProcessor 'org.projectlombok:lombok'
+
+	runtimeOnly 'org.projectlombok:lombok:1.16.20'
 	compile group: 'commons-io', name: 'commons-io', version: '2.6'
 
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
