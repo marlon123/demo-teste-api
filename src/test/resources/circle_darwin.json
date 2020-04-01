@@ -1,0 +1,22 @@
+{
+  "name": "My circle",
+  "ruleMatcherType": "DARWIN",
+  "rules": {
+    "type": "CLAUSE",
+    "clauses": [
+      {
+        "type": "RULE",
+        "content": {
+          "key": "username",
+          "value": [
+            "rafael"
+          ],
+          "condition": "EQUAL"
+        }
+      }
+    ],
+    "logicalOperator": "OR"
+  },
+  "segmentations": [],
+  "authorId": "5e397f95-11af-4512-a0d7-c68b840e818b"
+}
